@@ -2,7 +2,8 @@ import { join,resolve } from "path";
 import {
   app,
 } from "electron";
-import {createWindow,initIpc} from 'electron-prokit';
+import {createWindow} from 'electron-prokit';
+import ipc from './ipc'
 
 const initWindowsAction = () => {
   const mainWindow = createWindow('main',{
@@ -30,5 +31,5 @@ const initWindowsAction = () => {
 
 app.whenReady().then(() => {
   initWindowsAction()
-  initIpc()
+  ipc()
 })

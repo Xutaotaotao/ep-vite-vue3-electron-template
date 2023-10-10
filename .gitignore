@@ -9,6 +9,7 @@ lerna-debug.log*
 
 node_modules
 dist
+release
 dist-ssr
 *.local
 
@@ -24,6 +25,7 @@ dist-ssr
 *.sw?
 
 # lock
+pnpm-lock.yaml
 yarn.lock
 pnpm.lock
 npm.lock
